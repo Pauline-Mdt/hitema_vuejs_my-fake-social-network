@@ -1,33 +1,130 @@
 {
-    "utilisateurs": [
-        { "id" : 1 , "pseudo" : "Alain" , "email" : "alain@yahoo.fr" , "password" : "123456" ,
-            "urlImgProfil" : "https://thispersondoesnotexist.com/image" },
-        { "id" : 2 , "pseudo" : "Béatrice" , "email" : "bea@yahoo.fr" , "password" : "123456" ,
-            "urlImgProfil" : "https://thispersondoesnotexist.com/image" }
-    ],
-    "articles": [
+  "users": [
+    {
+      "id": 1,
+      "pseudo": "Alain",
+      "email": "alain@yahoo.fr",
+      "password": "123456",
+      "profilImageUrl": "https://thispersondoesnotexist.com/image"
+    },
+    {
+      "id": 2,
+      "pseudo": "Béatrice",
+      "email": "bea@yahoo.fr",
+      "password": "123456",
+      "profilImageUrl": "https://thispersondoesnotexist.com/image"
+    },
+    {
+      "pseudo": "Toto",
+      "email": "toto@yahoo.fr",
+      "password": "azerty",
+      "profilImageUrl": "https://via.placeholder.com/100x100",
+      "id": 3
+    },
+    {
+      "pseudo": "Tata",
+      "email": "tata@yahoo.fr",
+      "password": "azerty",
+      "profilImageUrl": "https://via.placeholder.com/200x200",
+      "id": 4
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula tincidunt diam. Praesent vulputate mauris a malesuada convallis. Phasellus et dignissim erat, at semper nisl. Nunc mauris turpis, tincidunt at tellus porttitor, venenatis lacinia augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus lobortis elit vitae pulvinar finibus. Ut rutrum tincidunt facilisis. Ut imperdiet pulvinar est in feugiat. Ut molestie molestie tortor ac euismod.",
+      "postImageUrl": "https://source.unsplash.com/random/1000x300",
+      "like": 21,
+      "authorPseudo": "Alain",
+      "authorImageUrl": "https://thispersondoesnotexist.com/image",
+      "date": 1649277945051,
+      "comments": [
         {
-            "id" : 1 ,
-            "contenu" : "lorem ipsum" ,
-            "urlImgArticle" : "https://source.unsplash.com/random/1000x300",
-            "like" : 2,
-            "pseudo" : "Alain",
-            "" : "",
-            "date" : 1649277945051,
-            "commentaires": [
-                {
-                    "id": 1 ,
-                    "contenu" : "lorem ipsum",
-                    "pseudo" : "Béatrice" ,
-                    "dt" : 1649277945051
-                },
-                {
-                    "id": 2 ,
-                    "contenu" : "lorem ipsum",
-                    "pseudo" : "Béatrice" ,
-                    "dt" : 1649277945051
-                }
-            ]
+          "id": 1,
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices.\n\n",
+          "pseudo": "Béatrice",
+          "date": 1649277945051
+        },
+        {
+          "id": 2,
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis, sapien non pulvinar sollicitudin, massa.",
+          "pseudo": "Béatrice",
+          "date": 1649277945051
+        },
+        {
+          "content": "Lorem ipsum dolor sit amet.",
+          "pseudo": "Toto",
+          "date": 1670064040432
+        },
+        {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et euismod mi, sed eleifend arcu.",
+          "pseudo": "Tata",
+          "date": 1670147608369
         }
-    ]
+      ]
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\nProin porta dui in rhoncus porttitor.\nVivamus id lectus vel quam gravida venenatis.",
+      "postImageUrl": "https://source.unsplash.com/random/1000x200",
+      "like": 4,
+      "authorPseudo": "Toto",
+      "authorImageUrl": "https://via.placeholder.com/100x200",
+      "date": 1670069915857,
+      "comments": [
+        {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices.",
+          "pseudo": "Tata",
+          "date": 1670070502592
+        }
+      ],
+      "id": 2
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\nProin porta dui in rhoncus porttitor.\nVivamus id lectus vel quam gravida venenatis.",
+      "postImageUrl": "https://source.unsplash.com/random/1000x300",
+      "like": 6,
+      "authorPseudo": "Béatrice",
+      "authorImageUrl": "https://thispersondoesnotexist.com/image",
+      "date": 1670070502592,
+      "comments": [
+        {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim augue vitae nunc consequat, id.",
+          "pseudo": "Toto",
+          "date": 1670147275867
+        }
+      ],
+      "id": 3
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus in urna a tincidunt. Donec vitae erat non augue maximus consectetur. Sed finibus mollis metus, vel feugiat lacus egestas ac. Donec sit amet dictum purus. Nulla facilisi. Nunc in faucibus neque. Integer nec quam ligula.",
+      "postImageUrl": "https://source.unsplash.com/random/1000x200",
+      "like": 1,
+      "authorPseudo": "Toto",
+      "authorImageUrl": "https://via.placeholder.com/100x200",
+      "date": 1670147321961,
+      "comments": [
+        {
+          "content": "Lorem ipsum dolor sit amet.",
+          "pseudo": "Toto",
+          "date": 1670147349112
+        },
+        {
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et euismod mi, sed eleifend arcu.",
+          "pseudo": "Tata",
+          "date": 1670147511203
+        }
+      ],
+      "id": 4
+    },
+    {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at risus egestas, fermentum eros sit amet, tempor neque. Aliquam et luctus lorem. Cras varius, dui sit amet ultrices tristique, nulla est imperdiet augue, ut viverra ex augue sit amet dolor. Vivamus non dolor malesuada mauris malesuada eleifend at nec augue. Cras id lorem ac neque dapibus cursus id sit amet enim. Ut consequat hendrerit tempus. Nulla mattis id leo eu consequat.",
+      "postImageUrl": "https://source.unsplash.com/random/1000x300",
+      "like": 3,
+      "authorPseudo": "Tata",
+      "authorImageUrl": "https://thispersondoesnotexist.com/image",
+      "date": 1670148172054,
+      "comments": [],
+      "id": 5
+    }
+  ]
 }
